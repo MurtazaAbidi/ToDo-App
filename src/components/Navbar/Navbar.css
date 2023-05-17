@@ -1,0 +1,77 @@
+.navbar-container {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: rgb(248 248 248) 0px 0px 10px 1px;
+    border: 1px solid #EFF0F6;
+
+}
+
+.navbar-logo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem 0.5rem;
+    cursor: pointer;
+}
+
+.navbar-logo img {
+    width: 100%;
+}
+
+.navbar-menuItems {
+    width: 85%;
+    margin: 0 auto 1rem auto;
+    overflow-y: auto;
+}
+
+.navbar-menuItems::-webkit-scrollbar {
+    display: none;
+}
+
+.navbar-menuItems ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: unset;
+
+}
+
+.navbar-menuItems ul li {
+    list-style: none;
+}
+
+.navbar-menuItems ul li .dashboard-NavLinks {
+    border: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 0.5rem 0;
+    border-radius: 10px;
+    font-weight: 500;
+    height: 2.6rem;
+    cursor: pointer;
+
+}
+
+.navbar-menuItems ul .dashboard-NavLinks {
+    text-decoration: none;
+}
+
+.navbar-menuItems ul li .dashboard-NavLinks:hover,
+.navbar-menuItems ul li .active {
+    color: rgba(27, 89, 248, 1);
+    background-color: rgba(27, 89, 248, 0.1);
+}
+
+.navbar-menuItems ul li .dashboard-NavLinks span:first-child {
+    padding: 0.4rem 0.5rem 0 1rem;
+    font-size: 1.25rem;
+}
